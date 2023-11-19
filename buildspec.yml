@@ -13,5 +13,5 @@ phases:
     - yarn build
   post_build:
     commands:
-    - aws s3 sync --delete ./dist s3://pattern-felps
-    - aws cloudfront create-invalidation --distribution-id E3OUHRI16V4LVA --paths /index.html
+    - aws s3 sync --delete ./dist s3://felpsdev
+    - aws cloudfront create-invalidation --distribution-id E27GNDCUO75FI9 --paths /index.html
